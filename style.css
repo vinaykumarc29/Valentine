@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+.container{
+    height: 100vh;
+    width:100vw;
+    background-color: lightpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerContainer{
+    height: 50vh;
+    width:50vw;
+    align-content: center;
+    background-color: white;
+    border:1px solid white;
+    border-radius: 15%;
+    display: flex;
+    flex-direction: column;
+     
+    
+}
+
+.upperContainer{
+    height: 60%;
+    width: 100% ;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+    border: 2px;
+}
+
+.lowerContainer{
+    height: 40%;
+    width: 100% ;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;  
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;  
+    position: relative;
+ 
+    
+    
+
+
+}
+
+.btn1,.btn2{
+    height: 3rem;
+    width: 4rem;
+    border:none;
+    border-radius: 25%;
+    background-color: pink;
+    color:black;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    
+    /* Vertically center them */
+    top: 50%;
+    transform: translateY(-50%);
+    
+
+}
+
+.btn1{
+    left:35%;
+    /* margin-right: 50px; */
+}
+
+
+.btn2{
+    left:60%;
+    /* position: absolute; */
+    /* right: 20%; */
+}
+
+
+
