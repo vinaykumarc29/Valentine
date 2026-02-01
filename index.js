@@ -1,5 +1,10 @@
-const noBtn = document.querySelector(".btn2"); // I changed this from 'btn2' to 'noBtn'
+const noBtn = document.querySelector(".btn2"); 
+const yesBtn = document.querySelector(".btn1");
 const container = document.querySelector(".lowerContainer");
+const innerContainer = document.querySelector(".innerContainer");
+const afterYesElements = document.querySelectorAll(".afterYes");
+const beforeYesElements = document.querySelectorAll(".beforeYes");
+const lowerContainer = document.querySelectorAll(".lowerContainer");
 
 noBtn.addEventListener("mouseenter", () => {
     const containerRect = container.getBoundingClientRect();
@@ -14,3 +19,16 @@ noBtn.addEventListener("mouseenter", () => {
     noBtn.style.left = `${randomX}px`;
     noBtn.style.top = `${randomY}px`;
 });
+
+yesBtn.addEventListener("click", ()=>{
+    innerContainer.classList.add("show-letter");
+    beforeYesElements.forEach((e)=>{
+        e.classList.add("none");
+    });
+    afterYesElements.forEach((e)=>{
+        e.classList.remove("none");
+    });
+    
+} )
+
+

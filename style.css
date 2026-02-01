@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
+
+
 *{
     margin: 0;
     padding:0;
@@ -87,6 +92,40 @@
     left:60%;
     /* position: absolute; */
     /* right: 20%; */
+}
+
+
+
+
+.message{
+text-align: top;
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
+ align-content: baseline;
+ font-size: 2rem;
+ align-items: center;
+ font-family: 'Dancing Script', cursive;
+
+ font-weight: 400; /* Normal weight */
+ line-height: 1.6; /* Adds nice spacing between lines */
+ 
+}
+
+.message pre {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2rem;
+    white-space: pre-wrap; 
+}
+
+
+.innerContainer.show-letter {
+    justify-content: flex-end; /* Pushes letter to bottom */
+    padding-bottom: 1.5rem;      /* Safe space from edge */
+}
+
+.none{
+    display: none;
 }
 
 
