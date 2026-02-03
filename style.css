@@ -55,10 +55,6 @@
     border-bottom-right-radius: 60px;
     border-bottom-left-radius: 60px;  
     position: relative;
- 
-    
-    
-
 
 }
 
@@ -74,8 +70,6 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    
-    /* Vertically center them */
     top: 50%;
     transform: translateY(-50%);
     
@@ -84,21 +78,19 @@
 
 .btn1{
     left:35%;
-    /* margin-right: 50px; */
+    
 }
 
 
 .btn2{
     left:60%;
-    /* position: absolute; */
-    /* right: 20%; */
+    
 }
 
 
 
 
 .message{
-text-align: top;
  display: flex;
  flex-wrap: wrap;
  flex-direction: column;
@@ -107,8 +99,8 @@ text-align: top;
  align-items: center;
  font-family: 'Dancing Script', cursive;
 
- font-weight: 400; /* Normal weight */
- line-height: 1.6; /* Adds nice spacing between lines */
+ font-weight: 400; 
+ line-height: 1.6; 
  
 }
 
@@ -120,13 +112,63 @@ text-align: top;
 
 
 .innerContainer.show-letter {
-    justify-content: flex-end; /* Pushes letter to bottom */
-    padding-bottom: 1.5rem;      /* Safe space from edge */
+    justify-content: flex-end; 
+    padding-bottom: 1.5rem;      
 }
 
 .none{
     display: none;
 }
 
+/* --- MOBILE RESPONSIVE STYLES --- */
+@media (max-width: 768px) {
+    
+    
+    .innerContainer {
+        width: 90vw;       
+        height: auto;      
+        min-height: 50vh;  
+        border-radius: 30px; 
+    }
 
+    
+    .upperContainer {
+        height: auto;     
+        padding: 20px 0; 
+        
+    }
+
+    .lowerContainer {
+        height: 100px;     
+    }
+
+    img {
+        max-width: 80% !important; 
+        height:100px !important;
+    }
+
+  
+    .btn1, .btn2 {
+        width: 3.5rem;    
+        height: 2.5rem;
+        font-size: 0.9rem;
+    }
+
+    .btn1 {
+        left: 20%;        
+    }
+    
+    .btn2 {
+        left: 60%;        
+    }
+
+    
+    .message pre {
+        font-size: 0.9rem; 
+        width: 95%;        
+    }
+    #givingHeart{
+        display: none;
+    }
+}
 
